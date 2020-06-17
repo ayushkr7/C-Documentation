@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documantation Page C Programming</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Documentation.css" type="css/text">
+    </head>
+    <main id="main-doc">     
+
+        <section class="main-section" id="Introduction">
+            <header>
+                 Introduction
+            </header>
+            <p>
+                A Computer needs to be given instructions in a programming  language that it understands.
+    
+            </p>
+
+            <p>
+               Programming Language :-
+            </p>
+
+            <ul>
+                <li>
+                     Artificial language that controls the behavior of computer
+                </li>
+                <li>
+                     Defined through the use of syntactic and semantic rules
+                </li>
+                <li>
+                    Used to facilitate communication about the task of organizing  and manipulating information
+                </li>
+                <li>
+                    Used to express algorithms precisely
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="What_you_should_already_know">
+            <header>
+                 What you should already know
+            </header>
+             <p>
+                This guide assumes you have the following basic background:
+             </p>
+             <ul>
+                 <li>A general understanding of what programming is.</li>
+                 <li> Basic working knowledge of C Programming.</li>  
+                 <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>  
+             </ul>
+        </section>
+
+        <section class="main-section" id="C">
+            <header >
+                 C 
+            </header>
+            <p>
+                 It is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system.
+                 By design, C provides constructs that map efficiently to typical machine instructions. It has found lasting use in applications previously coded in assembly language.
+                 Such applications include operating systems and various application software for computers architectures that range from supercomputers to PLCs and embedded systems.
+            </p>
+            <p>
+                A successor to the programming language B, C was originally developed at Bell Labs by Dennis Ritchie between 1972 and 1973 to construct utilities running on Unix.
+                 It was applied to re-implementing the kernel of the Unix operating system.[5] During the 1980s, C gradually gained popularity.
+                  It has become one of the most widely used programming languages,[6][7] with C compilers from various vendors available for the majority of existing computer architectures and operating systems.
+                 C has been standardized by the ANSI since 1989 (ANSI C) and by the International Organization for Standardization (ISO).
+            </p>
+            <p>
+                C is an imperative procedural language.
+                 It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support.
+                  Despite its low-level capabilities, the language was designed to encourage cross-platform programming.
+                 A standards-compliant C program written with portability in mind can be compiled for a wide variety of computer platforms and operating systems with few changes to its source code.
+            </p>
+            <p>
+                Why the Name “C” was given ?
+            </p>
+            <ul>
+                <li>
+                    Many of C’s principles and ideas were derived from the earlier  language B
+                </li>
+                <li>
+                    BCPL and CPL are the earlier ancestors of B Language (CPL is  common Programming Language)
+                </li>
+                <li>
+                    In 1967, BCPL Language ( Basic CPL ) was created as a scaled  down version of CPL
+                </li>
+                <li>
+                    As many of the features were derived from “B” Language  the new language was named as “C”.
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Hello_World!!">
+            <header>
+                 Hello World!!
+            </header>
+            <p>
+                To get started with writing C, open the IDE and write your first "Hello world" C code:
+            </p>
+            <code>
+                Program to Display "Hello, World!" <br>
+                #include <stdio.h> <br>
+                int main() { <br>
+                   // printf() displays the string inside quotation <br>
+                   printf("Hello, World!"); <br>
+                   return 0; <br>
+                } <br>
+            </code>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>
+                 Variables
+            </header>
+            <p>Variables & Identifiers <br><br>
+            <span>Identifier   </span>             
+                </p>
+                <ul>
+                    <li>
+                        A	string	of	alphanumeric	characters	that	begins	with	an  alphabetic character or an underscore character
+                    </li>
+                    <li>
+                         There	are	63	alphanumeric	characters,	i.e.,	53	alphabetic  characters and 10 digits (i.e., 0-9)
+                    </li>
+                    <li>
+                         Used to represent various programming elements such as   variables, functions, arrays, structures, unions
+                    </li>
+                    <li>
+                         The	underscore	character	is	considered	as	a	letter	in  identifiers (Usually used in the middle of an identifier)
+                    </li>
+                </ul>
+                <p>Rules for Identifers</p>
+                <ul>
+                    <li>
+                        Combination of alphabets, digits (or) underscore
+                    </li>
+                    <li>
+                         First character should be a Alphabet
+                    </li>
+                    <li>
+                        No special characters other than underscore can be used
+                    </li>
+                    <li>
+                        No comma / spaces allowed within variable name
+                    </li>
+                    <li>
+                         A variable name cannot be a keyword
+                    </li>
+                    <li>
+                        Variable names are case sensitive
+                    </li>
+                </ul><br>
+
+                <p>Variable</p> 
+                    <ul>
+                       <li>Value changes during execution</li> 
+                       <li>Identifier for a memory location where data is stored</li> 
+                       <li>Variable name length cannot be more than 31 characters.
+                       <li>Examples:	AVERAGE,	height,	a,	b,	sum,	mark_1,  gross_pay</li>                            
+                       </li>
+                   </ul>
+                                   
+        </section>
+
+        <section class="main-section" id="Declaring_Variables">
+            <header>
+                 Declaring Variables
+            </header>
+             <ul>
+                <li>A variable must be declared before it is used</li>
+                <li>Declaration consists of a data type followed by one or  more variable names separated by commas.</li>
+                <li>Syntax:  datatype variablename;</li>
+            </ul> 
+        </section>
+
+        <section class="main-section" id="Variable_Scope">
+            <header>
+                 Variable Scope
+                 
+                <p>A scope in any programming is a region of the program  where a defined variable can have its existence and beyond  that variable it cannot be accessed
+                    It is a region in a program where a variable is  declared and used
+                    The scope of a variable is the range of program statements that  can access that variable
+                    A variable is visible within its scope and invisible outside it
+                </p> 
+            </header>
+            <ul>
+                <li>
+                    Local Variables
+                    
+                </li>
+                <li>
+                    Global Variables
+                </li>
+            </ul>
+            </section>
+        <section class="main-section" id="Local_Variable">
+                <header>
+                     Local Variable 
+                </header>
+                <ul>
+                    <li>
+                         Variables that are declared inside a function or block are  called local variables.
+                    </li>
+                    <li>
+                        They can be used only by statements that are inside that  function or block of code.
+                    </li>
+                    <li>
+                        Local variables are created when the control reaches the  block or function containing the local variables and then they  get destroyed after that.
+                    </li>
+                    <li>
+                         Local variables are not known to functions outside their own.
+                    </li>
+                </ul>                         
+            <code>
+                /* Program for Demonstrating Local Variables*/ <br>
+                #include <stdio.h>  <br>
+                int main ( ) <br>
+                { <br>
+                /* local variable declaration */ <br>
+                int a, b, c; <br>
+                /* actual initialization */ <br>
+                a = 10; b = 20; <br>
+                c = a + b; <br>
+                printf ("value of a = %d, b = %d and c = %d\n", a, b, c);  <br>
+                return 0;<br>
+                } <br>
+                
+            </code>
+           
+        </section>
+
+        <section class="main-section" id="Global_Variable">
+            <header>
+                 Global Variable
+            </header>
+           <ul>
+               <li>
+                Defined outside a function, usually on top of the program        
+               </li>
+               <li>
+                     Hold their values throughout the lifetime of the program.
+               </li>
+               <li>
+                   Can be accessed inside any of the functions defined for the  program.
+               </li>
+               <li>
+                   Can be accessed by any function i.e. is available for use throughout  the entire program after its declaration.        
+               </li>
+           </ul>
+           <code>
+                #include <stdio.h> <br>
+                /* global variable declaration */ <br>
+                int g; <br>
+                int main ( ) <br>
+                { <br>
+                /* local variable declaration */ <br>
+                int a, b; <br>
+                /* actual initialization */ <br>
+                a = 10; b = 20; <br>
+                g = a + b; <br>
+                printf ("value of a = %d, b = %d and g = %d\n", a, b, g); <br>
+                return 0; <br>
+                }
+                
+           </code>
+        </section>
+
+        <section class="main-section" id="Constants">
+            <header>
+                 Constants
+            </header>
+              <p> Constants in C are the fixed values that are used in a program, and its value remains the same during the entire execution of the program.</p>
+              <ul>
+                  <li>
+                       Constants are also called literals.
+                  </li>
+                  <li>
+                      Constants can be any of the data types.
+                  </li>
+                  <li>
+                      It is considered best practice to define constants using only upper-case names.
+                  </li>
+              </ul>
+            <code>
+                
+            </code>        
+        </section>
+
+        <section class="main-section" id="Data_Type">
+            <header>
+                Data Type 
+            </header>
+            <ul>               
+                   <li> Defines a variable before use</li>
+                   <li> Specifies the type of data to be stored in variables</li>
+                   <li>Basic Data Types – 4 Classes</li>
+                   <li>int – Signed or unsigned number </li>
+                   <li>float – Signed or unsigned number having Decimal Point</li> 
+                   <li>double – Double Precision Floating point number</li> 
+                   <li>char – A Character in the character Set</li> 
+                   <li>Qualifiers</li>                 
+            </ul>
+              <p>A) Integer Data Type</p>
+                  <ul>
+                      <li>
+                          Whole numbers with a range
+                      </li>
+                      <li>
+                          No fractional parts
+                      </li>
+                      <li>
+                          Integer variable holds integer values only
+                      </li>
+                      <li>
+                         Keyword: int
+                      </li>
+                      <li>
+                         Memory: 2 Bytes (16 bits) or 4 Bytes (32 bits)
+                      </li>
+                      <li>
+                         Qualifiers: Signed, unsigned, short, long 
+                      </li>
+                      <li>
+                          Examples: 34012, 0, -2457
+                      </li>
+                  </ul>
+                
+                  <p>B) Floating Point Data Type</p>
+
+                   <li>Numbers having Fractional part</li> 
+                   <li>Float provides precision of 6 digits</li> 
+                   <li>Integer variable holds integer values only</li> 
+                   <li>Keyword: float</li> 
+                   <li> Memory: 4 Bytes (32 bits)</li>
+                   <li>Examples: 5.6, 0.375, 3.14756</li> 
+                    
+                 <p>C) Double Data Type</p>
+                   <li>Also handles floating point numbers</li> 
+                   <li>Double provides precision of 14 digits</li> 
+                   <li>Integer variable holds integer values only</li> 
+                   <li>Keyword: float</li> 
+                   <li>Memory: 8 Bytes (64 bits) or 10 Bytes (80 bits)</li> 
+                   <li>Qualifiers: long, short</li> 
+                
+                <p>D) Character Data Type</p>
+                   <li>handles one character at a time</li> 
+                   <li>Keyword: char</li> 
+                   <li>Memory: 1 Byte (8 bits)</li> 
+                    <br>
+        
+        </section>
+
+        <section class="main-section" id="If_else_statement">
+            <header>
+                 If else statement
+            </header>
+            <code>
+                // Program to display a number if it is negative <br>
+
+                #include <stdio.h> <br>
+                 int main() { <br>
+                 int number; <br>
+
+                 printf("Enter an integer: "); <br>
+                 scanf("%d", &number); <br>
+
+               // true if number is less than 0 <br>
+                 if (number < 0) {  <br>
+                  printf("You entered %d.\n", number); <br>
+                 } <br>
+
+                 printf("The if statement is easy."); <br>
+
+                 return 0; <br>
+                } <br>
+            </code>
+           
+        </section>
+
+        <section class="main-section" id="While">
+            <header>
+                 While
+            </header>
+           
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>
+                 Functions
+            </header>
+           
+        </section>
+    </main>
+</html>
