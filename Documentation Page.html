@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Documantation Page C Programming</title>
+        <title>Documentation Page C Programming</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="Documentation.css" type="css/text">
+        <link rel="stylesheet" href="Documentation Page.css" type="text/css">
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+        </script>
     </head>
+    
+    <nav id="navbar">
+        <header id="top"> C documentation</header>
+        <ul>
+         <li><a href="#Introduction" class="nav-link">Introduction</a>  <br></li>
+         <li><a href="#What_you_should_already_know" class="nav-link">What you should already know</a>  <br></li>
+         <li><a href="#C" class="nav-link">C</a>  <br></li>
+         <li><a href="#Hello_World!!" class="nav-link"> Hello World!!</a> <br></li>
+         <li><a href="#Declaring_Variables" class="nav-link">Declaring Variables</a>  <br></li>
+         <li><a href="#Variables" class="nav-link">Variables</a>  <br></li>
+         <li><a href="#Variable_Scope" class="nav-link">Variable Scope</a>  <br></li>
+         <li><a href="#Local_Variable" class="nav-link">Local Variable</a>  <br></li>
+         <li> <a href="#Global_Variable" class="nav-link">Global Variable</a>  <br></li>
+         <li><a href="#Constants" class="nav-link">Constants</a>  <br></li>
+         <li><a href="#Data_Type" class="nav-link">Data Type</a>  <br></li>
+         <li><a href="#If_statement" class="nav-link">If statement</a> <br></li>
+         <li><a href="#While" class="nav-link">While</a> <br></li>
+         <li><a href="#Switch_Case" class="nav-link"> Switch Case</a> <br></li> 
+         <li><a href="#Array" class="nav-link">Array</a><br></li>  
+        </ul>
+    </nav>
+
     <main id="main-doc">     
 
         <section class="main-section" id="Introduction">
@@ -113,7 +152,7 @@
                  Variables
             </header>
             <p>Variables & Identifiers <br><br>
-            <span>Identifier   </span>             
+            <span>Identifiers</span>             
                 </p>
                 <ul>
                     <li>
@@ -155,11 +194,11 @@
                     <ul>
                        <li>Value changes during execution</li> 
                        <li>Identifier for a memory location where data is stored</li> 
-                       <li>Variable name length cannot be more than 31 characters.
+                       <li>Variable name length cannot be more than 31 characters.</li>
                        <li>Examples:	AVERAGE,	height,	a,	b,	sum,	mark_1,  gross_pay</li>                            
-                       </li>
+                       
                    </ul>
-                                   
+                             
         </section>
 
         <section class="main-section" id="Declaring_Variables">
@@ -176,13 +215,13 @@
         <section class="main-section" id="Variable_Scope">
             <header>
                  Variable Scope
-                 
+            </header>     
                 <p>A scope in any programming is a region of the program  where a defined variable can have its existence and beyond  that variable it cannot be accessed
                     It is a region in a program where a variable is  declared and used
                     The scope of a variable is the range of program statements that  can access that variable
                     A variable is visible within its scope and invisible outside it
                 </p> 
-            </header>
+            
             <ul>
                 <li>
                     Local Variables
@@ -192,7 +231,8 @@
                     Global Variables
                 </li>
             </ul>
-            </section>
+        </section>
+        
         <section class="main-section" id="Local_Variable">
                 <header>
                      Local Variable 
@@ -346,14 +386,26 @@
                    <li>handles one character at a time</li> 
                    <li>Keyword: char</li> 
                    <li>Memory: 1 Byte (8 bits)</li> 
-                    <br>
-        
+                   <br>        
         </section>
 
-        <section class="main-section" id="If_else_statement">
+        <section class="main-section" id="If_statement">
             <header>
-                 If else statement
+                 If statement
             </header>
+             <ul>
+                 <li>Condition “True" - Statement block will be executed</li>
+                 <li>Condition “False“ - Statement block will not be executed.</li>
+                 
+                 <li>Variations</li>
+                 <ol>
+                     <li>Simple if</li>
+                     <li>if…else statement</li>
+                     <li>nested if…else statement</li>
+                     <li>else…if statement</li>
+                 </ol>
+             </ul>
+
             <code>
                 // Program to display a number if it is negative <br>
 
@@ -381,14 +433,98 @@
             <header>
                  While
             </header>
-           
+           <ul>
+               <li>Simplest looping structure in C </li>
+               <li>Statements	in	the	program	may	need	to	repeat	for	many  times. e.g., calculate the value of n!</li> 
+               <li>Loop consists of two segments</li> 
+               <ol>
+                   <li>Control Statement</li>
+                   <li>Body of the Loop</li>
+               </ol> 
+                
+               <li>How while loop works?</li> 
+
+               <code>
+                #include<stdio.h>  <br>
+                    int main( ) <br>
+                    { <br>
+                    int a, b, c, sum; <br>
+                    printf(“\n Enter the Three Numbers: ”);  <br>
+                    scanf(“%d%d%d”, &a,&b,&c); <br>
+                    sum = a+b+c; <br>
+                    printf(“The sum of 3 Numbers is %d”, sum);  <br>
+                    return 0;<br>
+                    } <br>
+                    
+               </code>
+               
+           </ul>
         </section>
 
-        <section class="main-section" id="Functions">
+        <section class="main-section" id="Switch_Case">
             <header>
-                 Functions
+                 Switch Case
             </header>
-           
+                <ul>
+                    <li>Allows to make decisions from a number of choices</li>
+                    <li>Also called as Switch-Case-Default Statement</li> 
+                    <li>Faster than nested if else statement</li> 
+                    <li>Easier to understand</li>
+                    <li>Rules for writing switch ( ) statement</li> 
+                    <ol>
+                       <li>Expression	in	switch	must	be	an	integer	value	or	a  character constant</li> 
+                       <li>No real numbers used in Expression</li> 
+                    </ol>    
+                </ul>
+
+                <code>
+                    #include<stdio.h>  <br>
+                        int main( ) <br>
+                        { <br>
+                        int a, b, choice;<br>
+                        printf(“\nEnter Two Numbers: ”);  scanf(“%d%d”, &a,&b);<br>
+                        printf(“\n Enter 1 for Addition”);  printf(“\n Enter 2 for Subtraction”);<br>
+                        printf(“\n Enter 3 for Multiplication”);<br>
+                        printf(“\n Enter 4 for Division”);   <br>
+                        printf(“ Enter your Choice”);  <br>
+                        scanf(“%d”,&choice);<br>
+                        switch (choice)<br>
+                        {<br>
+                        case 1:<br>
+                        printf(“Sum is : %d”, a+b);  <br>
+                        break;<br>
+                        case 2:<br>
+                        printf(“Difference is : %d”, a-b);  <br>
+                        break;<br>
+                        case 3:<br>
+                        printf(“Multiplication is : %d”, a*b);  <br>
+                        break;<br>
+                        case 4:<br>
+                        printf(“Difference is : %d”, a/b);  <br>
+                        break;<br>
+                        default:<br>
+                        printf(“Invalid Choice:”);<br>
+                        }<br>
+                        getch( );<br>
+                        }<br>                        
+                </code>
         </section>
+        
+        <section class="main-section" id="Array">
+            <header><br>
+                Array
+            </header>
+            An	array	is	defined	as	finite	ordered	collection	of  homogenous data, stored in contiguous memory locations.
+            <ul>
+                <li>Array is used to store a collection of data</li>
+                <li>Array is a collection of variables of the same type.</li>
+            </ul>
+            <br><br>
+            
+
+        </section>
+        
+        <button onclick="topFunction()" id="btntop" title="Go to top">Top</button>
+
     </main>
-</html>
+</html> 
