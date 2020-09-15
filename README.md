@@ -1,2 +1,2 @@
 # C-Documentation
-Made Documentation project of #freecodecamp Responsive web design Projects
+A documentation for all you need to learn basic C Programming
